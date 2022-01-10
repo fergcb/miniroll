@@ -9,7 +9,7 @@ npm i miniroll
 
 ## Usage
 ```js
-const roll = require('./miniroll')
+const roll = require('miniroll')
 
 const dice = '4d6dL'
 
