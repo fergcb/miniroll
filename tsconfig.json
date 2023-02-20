@@ -5,7 +5,6 @@
   "compilerOptions": {
     "allowJs": true,
     "declaration": true, // Generate d.ts files
-    "emitDeclarationOnly": true, // ONLY generate d.ts files
     "outDir": "dist",
     "declarationMap": true
   }

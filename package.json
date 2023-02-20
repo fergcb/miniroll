@@ -5,8 +5,11 @@
   "repository": "https://github.com/fergcb/miniroll",
   "author": "Fergus Bentley <mail@fergcb.uk>",
   "license": "MIT",
-  "main": "miniroll.js",
+  "main": "./dist/miniroll.js",
   "types": "./dist/miniroll.d.ts",
+  "files": [
+    "./dist"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
