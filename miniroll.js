@@ -19,7 +19,7 @@ const diceNotation = /^\s*(?<count>[1-9][0-9]*)?d(?<sides>[2-9]|[1-9][0-9]+|%)((
  * @typedef {Object} RollResult
  * @property {number} result The sum of the undropped dice
  * @property {number[]} rolls The undropped results of dice rolls
- * @property {number[]} count The dropped results of dice rolls
+ * @property {number[]} dropped The dropped results of dice rolls
  * @property {string} source The dice notation that created this roll (generated with {@link describeShort} if this roll was generated with a {@link Roll}) object.
  * @property {Roll} rollData The parameters used to execute this roll
  */
