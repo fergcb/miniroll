@@ -1,21 +1,17 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
     es2021: true,
     node: true,
-    'jest/globals': true,
   },
+  extends: 'standard-with-typescript',
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: './tsconfig.json',
   },
-  extends: [
-    'standard',
-  ],
-  plugins: [
-    'jest',
-  ],
   rules: {
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
   },
 }

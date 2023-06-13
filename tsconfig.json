@@ -1,11 +1,17 @@
 {
+  "files": [
+    "./miniroll.ts"
+  ],
   "include": [
-    "./miniroll.js"
+    "./miniroll.test.ts"
   ],
   "compilerOptions": {
     "allowJs": true,
-    "declaration": true, // Generate d.ts files
+    "declaration": true,
     "outDir": "dist",
-    "declarationMap": true
+    "declarationMap": true,
+    "target": "ESNext",
+    "strictNullChecks": true,
+    "moduleResolution": "nodenext"
   }
 }

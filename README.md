@@ -3,8 +3,8 @@ A simple JS library for rolling dice
 
 ## Installation
 ```sh
-yarn add miniroll
 npm i miniroll
+yarn add miniroll
 ```
 
 ## Usage
@@ -13,16 +13,13 @@ const roll = require('miniroll')
 
 const dice = '4d6dL'
 
-roll(dice)
-// 11
-
 roll.describe(dice)
 // 'roll 4 6-sided dice and drop the lowest'
 
 roll.describeShort(dice)
 // '4d6dL'
 
-roll(dice, true)
+roll(dice)
 /*
   {
     result: 14,
