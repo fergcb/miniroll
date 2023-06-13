@@ -12,6 +12,8 @@
     "declarationMap": true,
     "target": "ESNext",
     "strictNullChecks": true,
-    "moduleResolution": "nodenext"
+    "moduleResolution": "nodenext",
+    "module": "CommonJS",
+    "esModuleInterop": true,
   }
 }
