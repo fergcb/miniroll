@@ -9,14 +9,14 @@ yarn add miniroll
 
 ## Usage
 ```js
-const roll = require('miniroll')
+const { roll, describe, describeShort } = require('miniroll')
 
 const dice = '4d6dL'
 
-roll.describe(dice)
+describe(dice)
 // 'roll 4 6-sided dice and drop the lowest'
 
-roll.describeShort(dice)
+describeShort(dice)
 // '4d6dL'
 
 roll(dice)

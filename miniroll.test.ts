@@ -1,7 +1,7 @@
 /* eslint-disable array-bracket-spacing, no-multi-spaces */
 
 import { expect, test } from '@jest/globals'
-import roll, { describe as describeLong, describeShort } from './miniroll'
+import { roll, describe as describeLong, describeShort } from './miniroll'
 
 type TestData = [string, number, number, number, string, string]
 const testData: TestData[] = [

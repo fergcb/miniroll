@@ -1,4 +1,4 @@
-interface Roll {
+export interface Roll {
   /**
    * The number of dice to roll
    */
@@ -13,7 +13,7 @@ interface Roll {
   select?: Selection
 }
 
-interface RollResult {
+export interface RollResult {
   /**
    * The sum of the undropped dice
    */
@@ -36,7 +36,7 @@ interface RollResult {
   rollData: Roll
 }
 
-interface Selection {
+export interface Selection {
   /**
    * What to do with the selected dice
    */
@@ -57,7 +57,7 @@ const diceNotation = /^\s*(?<count>[1-9][0-9]*)?d(?<sides>[2-9]|[1-9][0-9]+|%)((
 /**
  * Take a string or roll data, and return only roll data
  */
-function resolveRoll (input: string | Roll): Roll {
+export function resolveRoll (input: string | Roll): Roll {
   if (typeof input === 'string') return parseDiceNotation(input)
   return input
 }
@@ -133,7 +133,7 @@ function rollOnce (sides: number): number {
 /**
  * Execute a roll and return the result of rolling the specified di(c)e and applying the given selection
  */
-export default function roll (input: string | Roll): RollResult {
+export function roll (input: string | Roll): RollResult {
   const source = typeof input === 'string' ? input : describeShort(input)
 
   const rollData = resolveRoll(input)
